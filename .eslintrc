@@ -1,0 +1,23 @@
+{
+  "root": true,
+  // 默认情况下,ESLint使用其内置的espree解析器,该解析器与标准javascript运行时版本兼容,而我们需要将ts代码解析为eslint兼容AST,所以此处我们使用@typescript-eslint/parser
+  "parser": "@typescript-eslint/parser",
+  // 指定配置集
+  // "eslint:recommended" 内置的推荐,检查众所周知的最佳实践
+  // "@typescript-eslint/recommended" typescript-eslint推荐,推荐特定于ts的规则
+  // "@typescript-eslint/eslint-recommended" 禁用eslint:recommended中已经由ts处理的规则,防止eslint和typescript之间冲突
+  // "prettier" 关闭所有可能干扰prettier规则的eslint规则,确保在最后,覆盖其他配置
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "prettier"
+  ],
+  // 加载插件
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off"
+  }
+}

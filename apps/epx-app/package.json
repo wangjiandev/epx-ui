@@ -1,0 +1,14 @@
+{
+  "name": "@epx-ui/epx-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "epx ui",
+  "author": "Wang Jian",
+  "license": "MIT",
+  "scripts": {
+    "debug": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@epx-ui/util": "workspace:^"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@epx-ui/util",
+  "private": true,
+  "version": "0.1.0",
+  "description": "epx ui",
+  "author": "Wang Jian",
+  "license": "MIT",
+  "main": "./src/index.ts"
+}
