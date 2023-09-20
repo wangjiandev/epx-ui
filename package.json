@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
+    "cz": "cz",
     "__eslint__comment": "查阅eslint文档: https://eslint.org/docs/latest/use/command-line-interface",
     "lint": "eslint ./ --ext .ts,.js,.json --max-warnings=0",
     "__prettier__comment": "查阅prettier文档: https://prettier.io/docs/en/cli",
@@ -19,6 +20,8 @@
     "@types/node": "^20.6.3",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
